@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8740973B27444CD100DB1CD1 /* libactivator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8740973A27444CD100DB1CD1 /* libactivator.dylib */; };
+		8740973C27444CD100DB1CD1 /* libactivator.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 8740973A27444CD100DB1CD1 /* libactivator.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8740973F27444CDD00DB1CD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8740973E27444CDD00DB1CD1 /* CoreGraphics.framework */; };
+		87463CCC273A757F00DC7779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87463CCB273A757F00DC7779 /* UIKit.framework */; };
+		87463CCE273A757F00DC7779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87463CCD273A757F00DC7779 /* Foundation.framework */; };
+		87463CD0273A757F00DC7779 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87463CCF273A757F00DC7779 /* CydiaSubstrate.framework */; };
+		87463CD9273A757F00DC7779 /* headsUpDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87463CD8273A757F00DC7779 /* headsUpDisplay.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8740973D27444CD100DB1CD1 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8740973C27444CD100DB1CD1 /* libactivator.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8740973A27444CD100DB1CD1 /* libactivator.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libactivator.dylib; path = ../../../../opt/theos/lib/libactivator.dylib; sourceTree = "<group>"; };
+		8740973E27444CDD00DB1CD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87463CC8273A757F00DC7779 /* headsUpDisplay.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = headsUpDisplay.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		87463CCB273A757F00DC7779 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87463CCD273A757F00DC7779 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87463CCF273A757F00DC7779 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		87463CD4273A757F00DC7779 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		87463CD6273A757F00DC7779 /* headsUpDisplay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "headsUpDisplay-Prefix.pch"; path = "../headsUpDisplay-Prefix.pch"; sourceTree = "<group>"; };
+		87463CD7273A757F00DC7779 /* headsUpDisplay.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = headsUpDisplay.xm; sourceTree = "<group>"; };
+		87463CD8273A757F00DC7779 /* headsUpDisplay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = headsUpDisplay.mm; sourceTree = "<group>"; };
+		87463CDD273A757F00DC7779 /* headsUpDisplay.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = headsUpDisplay.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87463CC4273A757F00DC7779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8740973B27444CD100DB1CD1 /* libactivator.dylib in Frameworks */,
+				87463CCC273A757F00DC7779 /* UIKit.framework in Frameworks */,
+				87463CCE273A757F00DC7779 /* Foundation.framework in Frameworks */,
+				8740973F27444CDD00DB1CD1 /* CoreGraphics.framework in Frameworks */,
+				87463CD0273A757F00DC7779 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87463CBD273A757F00DC7779 = {
+			isa = PBXGroup;
+			children = (
+				87463CD1273A757F00DC7779 /* headsUpDisplay */,
+				87463CCA273A757F00DC7779 /* Frameworks */,
+				87463CC9273A757F00DC7779 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87463CC9273A757F00DC7779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87463CC8273A757F00DC7779 /* headsUpDisplay.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87463CCA273A757F00DC7779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8740973E27444CDD00DB1CD1 /* CoreGraphics.framework */,
+				8740973A27444CD100DB1CD1 /* libactivator.dylib */,
+				87463CCB273A757F00DC7779 /* UIKit.framework */,
+				87463CCD273A757F00DC7779 /* Foundation.framework */,
+				87463CCF273A757F00DC7779 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87463CD1273A757F00DC7779 /* headsUpDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				87463CD7273A757F00DC7779 /* headsUpDisplay.xm */,
+				87463CD8273A757F00DC7779 /* headsUpDisplay.mm */,
+				87463CD2273A757F00DC7779 /* Package */,
+				87463CD5273A757F00DC7779 /* Supporting Files */,
+			);
+			path = headsUpDisplay;
+			sourceTree = "<group>";
+		};
+		87463CD2273A757F00DC7779 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				87463CD3273A757F00DC7779 /* DEBIAN */,
+				87463CDA273A757F00DC7779 /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		87463CD3273A757F00DC7779 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				87463CD4273A757F00DC7779 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		87463CD5273A757F00DC7779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87463CD6273A757F00DC7779 /* headsUpDisplay-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87463CDA273A757F00DC7779 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				87463CDB273A757F00DC7779 /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		87463CDB273A757F00DC7779 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				87463CDC273A757F00DC7779 /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		87463CDC273A757F00DC7779 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				87463CDD273A757F00DC7779 /* headsUpDisplay.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87463CC5273A757F00DC7779 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87463CC7273A757F00DC7779 /* headsUpDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87463CE0273A757F00DC7779 /* Build configuration list for PBXNativeTarget "headsUpDisplay" */;
+			buildPhases = (
+				87463CC2273A757F00DC7779 /* ShellScript */,
+				87463CC3273A757F00DC7779 /* Sources */,
+				87463CC4273A757F00DC7779 /* Frameworks */,
+				87463CC5273A757F00DC7779 /* Headers */,
+				87463CC6273A757F00DC7779 /* ShellScript */,
+				8740973D27444CD100DB1CD1 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = headsUpDisplay;
+			productName = headsUpDisplay;
+			productReference = 87463CC8273A757F00DC7779 /* headsUpDisplay.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87463CBE273A757F00DC7779 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					87463CC7273A757F00DC7779 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 87463CC1273A757F00DC7779 /* Build configuration list for PBXProject "headsUpDisplay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87463CBD273A757F00DC7779;
+			productRefGroup = 87463CC9273A757F00DC7779 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87463CC7273A757F00DC7779 /* headsUpDisplay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87463CC2273A757F00DC7779 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		87463CC6273A757F00DC7779 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87463CC3273A757F00DC7779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87463CD9273A757F00DC7779 /* headsUpDisplay.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87463CDE273A757F00DC7779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"headsUpDisplay\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87463CDF273A757F00DC7779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"headsUpDisplay\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		87463CE1273A757F00DC7779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "headsUpDisplay/headsUpDisplay-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = 3333;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87463CE2273A757F00DC7779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "headsUpDisplay/headsUpDisplay-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = 3333;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87463CC1273A757F00DC7779 /* Build configuration list for PBXProject "headsUpDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87463CDE273A757F00DC7779 /* Release */,
+				87463CDF273A757F00DC7779 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87463CE0273A757F00DC7779 /* Build configuration list for PBXNativeTarget "headsUpDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87463CE1273A757F00DC7779 /* Release */,
+				87463CE2273A757F00DC7779 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87463CBE273A757F00DC7779 /* Project object */;
+}

@@ -1,0 +1,17 @@
+Package: net.tihmstar.headsUpDisplay
+Name: headsUpDisplay
+Version: 0.1-1
+Description: 
+Section: System
+Depends: firmware (>= 14.0), mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: tihmstar
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
